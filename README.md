@@ -12,7 +12,7 @@ $ /Applications/MAMP/Library/bin/mysqldump -u ユーザー名 -p スキーマ名
 パスワード
 ```
 
-# クローン（Lightsail）
+# clone（Lightsail）
 
 ▽ディレクトリ移動
 
@@ -20,13 +20,13 @@ $ /Applications/MAMP/Library/bin/mysqldump -u ユーザー名 -p スキーマ名
 $ cd /home/bitnami/htdocs
 ```
 
-▽クローン
+▽clone
 
 ```
 $ git clone https://github.com/LingmuSajun/lamp_test.git
 ```
 
-# phpdotenvインストール
+# phpdotenvインストール（Lightsail）
 
 ▽ディレクトリ移動
 
@@ -40,7 +40,7 @@ $ cd /home/bitnami/htdocs/lamp_test
 $ composer require vlucas/phpdotenv
 ```
 
-# .env作成
+# .env作成（Lightsail）
 
 ▽ディレクトリ移動
 
