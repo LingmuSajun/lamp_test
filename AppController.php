@@ -9,21 +9,12 @@ abstract class AppController {
 		$dot_env = Dotenv\Dotenv::createImmutable(__DIR__);
 		$dot_env->load();
 
-		$this->__response_service = new ResponseService;
+		$response_data = $this->getResponseData();
 
-		$response = $this->getResponse();
-		echo $response;
+		$response_service = new ResponseService;
+		$json_response = $response_service->convertArrayToJsonString($response_data);
+		echo $json_response;
 	}
 
-	abstract protected function getResponse();
-
-	protected function getErrorResponse($response) {
-		$error_response = $this->__response_service->getErrorResponse($response);
-		return $error_response;
-	}
-
-	protected function getSuccessResponse($response) {
-		$success_response = $this->__response_service->getSuccessResponse($response);
-		return $success_response;
-	}
+	abstract protected function getResponseData();
 }

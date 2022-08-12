@@ -4,11 +4,10 @@ require_once 'AppController.php';
 
 class Countries extends AppController
 {
-	protected function getResponse()
+	protected function getResponseData()
 	{
 		$country_service = new CountryService;
-		$countries = $country_service->getAllCountries();
-		$response = $this->getSuccessResponse($countries);
-		return $response;
+		$response_data = $country_service->getAllCountries();
+		return $response_data;
 	}
 } new Countries;
