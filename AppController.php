@@ -3,8 +3,6 @@ require_once 'vendor/autoload.php';
 require_once 'services/ResponseService.php';
 
 abstract class AppController {
-	private $__response_service;
-
 	public function __construct() {
 		$dot_env = Dotenv\Dotenv::createImmutable(__DIR__);
 		$dot_env->load();
