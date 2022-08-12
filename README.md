@@ -1,0 +1,63 @@
+# dumpファイル作成（ローカル）
+
+▽dumpファイル作成
+
+```
+$ /Applications/MAMP/Library/bin/mysqldump -u ユーザー名 -p スキーマ名 > /Applications/MAMP/htdocs/lamp_test/database/dump_スキーマ名_yyyymmdd.sql
+```
+
+▽パスワード
+
+```
+パスワード
+```
+
+# クローン（Lightsail）
+
+▽ディレクトリ移動
+
+```
+$ cd /home/bitnami/htdocs
+```
+
+▽クローン
+
+```
+$ git clone https://github.com/LingmuSajun/lamp_test.git
+```
+
+# phpdotenvインストール
+
+▽ディレクトリ移動
+
+```
+$ cd /home/bitnami/htdocs
+```
+
+▽phpdotenvインストール
+
+```
+$ composer require vlucas/phpdotenv
+```
+
+# .env作成
+
+▽ディレクトリ移動
+
+```
+$ cd /home/bitnami/htdocs
+```
+
+▽.env作成
+
+```
+$ vi .env
+```
+
+▽.env編集
+
+```
+DB_HOST = 'mysql:dbname=データベース名;host=ホスト名;charset=utf8'
+DB_USER_NAME = 'ユーザー名'
+DB_PASSWORD = 'パスワード'
+```
