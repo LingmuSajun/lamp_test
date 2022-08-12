@@ -31,7 +31,7 @@ $ git clone https://github.com/LingmuSajun/lamp_test.git
 ▽ディレクトリ移動
 
 ```
-$ cd /home/bitnami/htdocs
+$ cd /home/bitnami/htdocs/lamp_test
 ```
 
 ▽phpdotenvインストール
@@ -45,7 +45,7 @@ $ composer require vlucas/phpdotenv
 ▽ディレクトリ移動
 
 ```
-$ cd /home/bitnami/htdocs
+$ cd /home/bitnami/htdocs/lamp_test
 ```
 
 ▽.env作成
