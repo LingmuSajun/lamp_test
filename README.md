@@ -17,7 +17,7 @@ $ /Applications/MAMP/Library/bin/mysqldump -u ユーザー名 -p スキーマ名
 ▽ディレクトリ移動
 
 ```
-$ cd /home/bitnami/htdocs
+$ cd /opt/bitnami/apache2/htdocs
 ```
 
 ▽clone
@@ -31,7 +31,7 @@ $ git clone https://github.com/LingmuSajun/lamp_test.git
 ▽ディレクトリ移動
 
 ```
-$ cd /home/bitnami/htdocs/lamp_test
+$ cd /opt/bitnami/apache2/htdocs/lamp_test
 ```
 
 ▽phpdotenvインストール
@@ -45,7 +45,7 @@ $ composer require vlucas/phpdotenv
 ▽ディレクトリ移動
 
 ```
-$ cd /home/bitnami/htdocs/lamp_test
+$ cd /opt/bitnami/apache2/htdocs/lamp_test
 ```
 
 ▽.env作成
@@ -57,7 +57,7 @@ $ vi .env
 ▽.env編集
 
 ```
-DB_HOST = 'mysql:dbname=データベース名;host=ホスト名;charset=utf8'
+DB_HOST = 'mysql:dbname=lamp_test;host=ホスト名;charset=utf8'
 DB_USER_NAME = 'ユーザー名'
 DB_PASSWORD = 'パスワード'
 ```
