@@ -57,7 +57,7 @@ $ vi .env
 ▽.env編集
 
 ```
-DB_HOST = 'mysql:dbname=データベース名;host=ホスト名;charset=utf8'
+DB_HOST = 'mysql:dbname=lamp_test;host=ホスト名;charset=utf8'
 DB_USER_NAME = 'ユーザー名'
 DB_PASSWORD = 'パスワード'
 ```
